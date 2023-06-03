@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.links {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-left: 10%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 8rem;
+    margin-left: 1.5rem;
+}
+
+.icon {
+    height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

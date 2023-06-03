@@ -1,0 +1,12 @@
+.you-searched-text {
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 2%;
+    margin-left: 6%;
+}
