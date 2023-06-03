@@ -2,8 +2,15 @@ import React from 'react'
 import Navbar from '../navbar/Navbar'
 import { Banner } from '../assets/banner.jpg'
 import './Home.css'
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+
+  let navigate = useNavigate(); 
+  function routeChange(path) {
+    navigate(path);
+  }
+
   return (
     <>
       <div className='background-container'>
@@ -17,7 +24,7 @@ function Home() {
           <span className='sub-heading'>
             ON ALL PRODUCTS
           </span>
-          <button className='shop-btn'>SHOP</button>
+          <button className='shop-btn' onClick={() => routeChange(`/all`)}>SHOP</button>
         </div>
       </div>
       <span className='explore-category'>Explore Categories _______________ </span>
@@ -27,7 +34,7 @@ function Home() {
           </div>
           <div className='text'>
             MEN'S FASHION
-            <button className='btn'>SHOP NOW</button>
+            <button className='btn' onClick={() => routeChange(`/mens`)}>SHOP NOW</button>
           </div>
         </div>
         <div className='category-container'>
@@ -35,7 +42,7 @@ function Home() {
           </div>
           <div className='text'>
             WOMEN'S FASHION
-            <button className='btn'>SHOP NOW</button>
+            <button className='btn' onClick={() => routeChange(`/womens`)}>SHOP NOW</button>
           </div>
         </div>
       </div>
