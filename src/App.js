@@ -11,10 +11,12 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
+import Listview from './components/listview/Listview';
 
 
 function App() {
   return (
+    // <Listview />
     <Router>
       <Navbar />
       <Routes>

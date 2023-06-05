@@ -1,0 +1,47 @@
+.img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border: 1px solid grey;
+    padding: 12px;
+    position: relative;
+    background-color: white;
+}
+
+.list-right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 80%;
+    margin-top: 40px;
+}
+
+.list-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 30%;
+    margin-top: 40px;
+}
+
+.quantity-desc {
+    margin-top: 8px;
+}
+
+.list-view-btn {
+    margin-top: 8px;
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 0.9rem;
+}
+
+.list-view-btn:hover {
+    cursor: pointer;
+}
